@@ -17,34 +17,99 @@
         <li><a class="active" href="#home">Home</a></li>
         <li><a href="#news">News</a></li>
         <li><a href="#contact">Contact</a></li>
+        <li><a href="#history">history</a></li>
     </ul>
-    
-    <h3>Sticky Navigation Bar Example</h3>
-    <p>The navbar will <strong>stick</strong> to the top when you reach its scroll position.</p>
-    <p><strong>Note:</strong> Internet Explorer, Edge 15 and earlier versions do not support sticky positioning. Safari
-        requires a -webkit- prefix.</p>
-    <p>Some text to enable scrolling. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et
-        eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae
-        nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
-    <p>Some text to enable scrolling. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et
-        eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae
-        nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
-    <p>Some text to enable scrolling. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et
-        eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae
-        nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
-    <p>Some text to enable scrolling. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et
-        eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae
-        nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
-    <p>Some text to enable scrolling. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et
-        eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae
-        nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
-    <p>Some text to enable scrolling. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et
-        eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae
-        nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
-    <p>Some text to enable scrolling. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et
-        eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae
-        nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
+    </nav>
+    <section class="content">
+        <h2>아이유 소개</h2>
+        <article>
+            <div style="float:left; width:150px; margin-right:25px;">
+                <img src="C:\Users\변승현\Desktop\아이유-메인화면 만들기\images\iu1.jpg" width="150px" ; alt="아이유사진">
+            </div>
 
+
+
+            <div class="w3-content w3-display-container" style="max-width:800px">
+                <img class="mySlides" src="C:\Users\변승현\Desktop\아이유-메인화면 만들기\images\iu1.jpg" style="width:100%">
+                <img class="mySlides" src="C:\Users\변승현\Desktop\아이유-메인화면 만들기\images\iu3.jpg" style="width:100%">
+                <img class="mySlides" src="img_mountains_wide.jpg" style="width:100%">
+                <div class="w3-center w3-section w3-large w3-text-white w3-display-bottomleft" style="width:100%">
+                    <div class="w3-left w3-padding-left w3-hover-text-khaki" onclick="plusDivs(-1)">&#10094;</div>
+                    <div class="w3-right w3-padding-right w3-hover-text-khaki" onclick="plusDivs(1)">&#10095;</div>
+                    <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(1)"></span>
+                    <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(2)"></span>
+                    <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(3)"></span>
+                </div>
+            </div>
+            
+            <script>
+                var slideIndex = 1;
+                showDivs(slideIndex);
+
+                function plusDivs(n) {
+                    showDivs(slideIndex += n);
+                }
+
+                function currentDiv(n) {
+                    showDivs(slideIndex = n);
+                }
+
+                function showDivs(n) {
+                    var i;
+                    var x = document.getElementsByClassName("mySlides");
+                    var dots = document.getElementsByClassName("demo");
+                    if (n > x.length) { slideIndex = 1 }
+                    if (n < 1) { slideIndex = x.length };
+                    for (i = 0; i < x.length; i++) {
+                        x[i].style.display = "none";
+                    }
+                    for (i = 0; i < dots.length; i++) {
+                        dots[i].className = dots[i].className.replace(" w3-white", "");
+                    }
+                    x[slideIndex - 1].style.display = "block";
+                    dots[slideIndex - 1].className += " w3-white";
+                }
+            </script>
+
+            <div>
+                <h1>아이유 (이지은, IU) 가수, 탤런트</h1>
+                <p><strong>28세 (만 27세) 황소자리 닭띠출생 1993년 5월 16일</strong></p>
+                <hr>
+                <p>소속사 EDAM엔터테인먼트<br>
+                    데뷔 2008년 미니 앨범 [Lost and Found]
+                    사이트:인스타그램, 트위터, 페이스북, 유튜브, V LIVE</p>
+                아이유는 2008년 9월 23일에 발매된 첫 번째 미니 음반 Lost and Found를 통하여 가수로 데뷔하였다. 데뷔 전부터 라디오에서 음악을 알렸던 아이유는 유영석, 유희열, 정재형 등의
+                음악가들로부터 호평을 받았다. 유영석은 "나이가 어린 소녀인데 노래를 너무 잘하고, 음악성이 뛰어난 것 같아서 이 앨범을 추천한다"라고 칭찬하였으며, 정재형은 "앞으로 많은 발전이 기대되는
+                가수"라며 기대감을 보였다.[16] 아이유는 음반이 발매되기 전인 2008년 9월 18일에 Mnet 《엠 카운트다운》에서 타이틀곡인 〈미아〉를 불러 첫 데뷔 무대를 가졌다. 타이틀곡 〈미아〉는
+                이종훈, 민웅식이 공동 작곡한 곡으로 일렉트로닉 사운드에 힙합 리듬이 섞인 하이브리드 팝 발라드이다.[17] 앨범 발매 당시에는 별로 관심을 받지 못하였지만,〈미아〉를 통하여 아이유는 당시
+                16세의 소녀답지 않은 가창력으로 코러스와 아리아부분까지 1인 3역을 소화해 내며 조금씩 대중들에게 얼굴을 알렸다.[18] 그 결과 2008년 10월에 문화체육관광부에서 추진하는 '이달의 우수
+                신인음반 선정 및 홍보 지원사업'에서 아이유의 Lost and Found가 선정되었다.[19]
+    
+            </div>
+            <div class="banner">
+                <iframe width="980" height="559" src="https://www.youtube.com/embed/D1PvIWdJ8xo" frameborder="0"
+                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+            </div>
+        </article>
+    </section>
+    <aside class="sidebar">
+        <h3>¤ 알립니다</h3>
+        <p>게스트하우스 예약은 전화 070-###-#### 로 직접 통화하시는게 가장 정확하고 빠릅니다. 인터넷 전화이므로 시외 전화 요금이 부과되지 않습니다. </p>
+        <img src="images/iu1-s.jpg" alt="">
+        <img src="images/iu2-s.jpg" alt="">
+    
+    </aside>
+    <footer>
+        <address>
+            <p>서울특별시 강남구 청담동 하남길 43번지 1034-9 </p>
+            <p>s20035@gsm.hs.kr<p>
+        </address>
+        <p> Copyright ⓒ. All rights reserved.</p>
+    </footer>
+    </div>
+    
+    
 </body>
 
 </html>

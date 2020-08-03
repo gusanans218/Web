@@ -1,7 +1,4 @@
-head{
 
-
-}
 
 body{
     font-size :20px;
@@ -40,11 +37,110 @@ li a:hover{
     background-color: #ca4057;
 }
 
+.mySlides {display:none}
+.w3-left, .w3-right, .w3-badge {cursor:pointer}
+.w3-badge {height:13px;width:13px;padding:0}
+
+
+
 .slide{height:600px; overflow:hidden;}
 .slide ul{width:calc (100% *6); display:flex; animation:slide 8s infinite;}
 .slide li{width :calc (100% /6); height : 600px;}
 .slide li:nth-child(1)
-{background:url('../image/iu1.png');}
+{background :url('C:\Users\변승현\Desktop\image\iu1.jpg')}
+.slide li:nth-child(2)
+{background:url('C:\Users\변승현\Desktop\image\iu2.jpg')}
+.slide li:nth-child(3)
+{background:url('C:\Users\변승현\Desktop\image\iu3.')}
+.slide li:nth-child(4)
+{background:url('C:\Users\변승현\Desktop\image\iu4.');}
+.slide li:nth-child(5)
+{background:url('C:\Users\변승현\Desktop\아이유-메인화면 만들기\images\iu3');}
+.slide li:nth-child(6)
+{background:url('C:\Users\변승현\Desktop\아이유-메인화면 만들기\images\iu5');}
+
+@keyframes slide{
+    0%  {margin-left : 0;}
+    10% {margin-left :0;}
+    25% {margin-left :-100;}
+    35% {margin-left : -100;}
+    50% {margin-left : -200;}
+    60% {margin-left : -200;}
+    75% {margin-left : -300;}
+    85% {margin-left : -300;}
+    100% {margin-left :0;}
+}
+.navi{
+    position: relative;
+    background: #271717;
+    margin-top: -15px;
+    width : 1000px;
+    height : 60px;
+}
+.navi ul{
+    list-style: none;
+    height : 40px;
+    padding-top: 10px;
+    padding-bottom: 5px;
+}
+.navi ul li {
+	display:inline;
+    
+	font-size:15px;
+}
+.navi a, .navi a:visited {
+    padding : 10px 5px 5px 35px;
+    display :block;
+    color : #fff;
+    width : 200px;
+    text-decoration : none;
+}
+.navi a:hover, .navi a :active, .navi a:focus
+{
+    text-shadow: 0px 2px 2px #000;
+    color : #FC0;
+}
+.sidebar{
+    float:right;
+    width: 200px;
+    height : 400px;
+    background-color: #e2e2e2;
+    padding-top: 10px;
+    padding-left : 10px;
+    padding-right : 10px;
+}
+.sidebar img {
+    margin-bottom: 5px;
+    border : 1px solid #ccc;
+    opacity: 0.5;
+    text-align: center;
+}
+.sidebar img :hover {
+    border:1px solid #000;
+    opacity:1.0;
+}
+.content {
+    background-color: #ffffff;
+    padding-top:5px;
+    padding-left:10px;
+    width:720px;
+    float:left;
+}
+footer {
+    padding: 10px 0;
+    background-color: #030;
+    color:#fff;
+    text-align: center;
+    clear:both;
+}
+
+header, section, footer, aside, article, figure {
+    display:block;
+}
+.banner{
+    margin:50px auto;
+    padding:0;
+}
 
 
 
