@@ -1,0 +1,136 @@
+@charset "utf-8";
+
+
+
+h1{
+    font-family: Georgia;
+    font-size: 50px;
+    text-align: center;
+}
+h2{
+    font-family: Georgia;
+    font-size :20px;
+    text-align: center;
+}
+h3{
+    font-family: Arial;
+    font-size: 15px;
+    text-align: right;
+}
+
+p{
+   font-family: 'Jua', sans-serif;
+    font-size: 20px;
+    text-align: center;
+}
+
+
+
+*{margin:0;padding:0;}
+    ul,li{list-style:none;}
+    .slide{height:700px; overflow:hidden;}
+    .slide ul{width:calc(100% * 4);display:flex;animation:slide 8s infinite;} /* slide를 8초동안 진행하며 무한반복 함 */
+    .slide li{width:calc(100% / 4);height:462px;}
+    .slide li:nth-child(1)
+    {
+        
+        max-width: 700px;
+        max-height: 463px;
+        background-repeat: no-repeat;
+        background-position: center; 
+        background-size: 462px;
+        background:url(https://img.insight.co.kr/static/2019/11/05/700/6dxow23eff21tzf0t6z3.jpg);
+    }
+    .slide li:nth-child(2)
+    {
+          max-width: 700px;
+        max-height: 462px;
+        background-repeat: no-repeat;
+        background-position: center; 
+        background-size: 462px;
+        background:url(https://i.pinimg.com/736x/e9/d0/bd/e9d0bda7d5c3f49f5c85401866e49c6d.jpg);
+    }
+    .slide li:nth-child(3){ background:#afa;}
+    .slide li:nth-child(4){background:#aaf;}
+    @keyframes slide {
+      0% {margin-left:0;} /* 0 ~ 10  : 정지 */
+      10% {margin-left:0;} /* 10 ~ 25 : 변이 */
+      25% {margin-left:-100%;} /* 25 ~ 35 : 정지 */
+      35% {margin-left:-100%;} /* 35 ~ 50 : 변이 */
+      50% {margin-left:-200%;}
+      60% {margin-left:-200%;}
+      75% {margin-left:-300%;}
+      85% {margin-left:-300%;}
+      100% {margin-left:0;}
+    }
+
+    ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+  position: -webkit-sticky; /* Safari */
+  
+  top: 0;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #111;
+}
+
+.active {
+  background-color: #4CAF50;
+}
+
+.sidebar {
+	float: right;
+	width: 200px;
+	height: 400px;
+	background-color:#e2e2e2;
+	padding-top:10px;
+	padding-left:10px;
+	padding-right:10px;
+}
+
+.sidebar img {
+	margin-bottom: 5px;
+	border: 1px solid #ccc;
+	opacity:0.5; 
+	text-align:center;
+}
+
+.sidebar img:hover{
+	border:1px solid #000;	
+	opacity:1.0;
+}
+.content {
+	background-color: #FFFFFF;	
+	padding-top:5px;
+	padding-left:10px;
+	width: 720px;
+	float: left;
+}
+
+footer {
+	padding: 10px 0;
+	background-color:#030;
+	color:#fff;
+	text-align:center;
+	clear: both;
+}
+
+    section, footer, aside, article, figure {
+	display: block;
