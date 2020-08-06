@@ -1,31 +1,4 @@
-@charset "utf-8";
 @import url("anim5-v.css") screen;
-
-
-
-h1{
-    font-family: Georgia;
-    font-size: 50px;
-    text-align: center;
-}
-h2{
-    font-family: Georgia;
-    font-size :20px;
-    text-align: center;
-}
-h3{
-    font-family: Arial;
-    font-size: 15px;
-    text-align: right;
-}
-
-p{
-   font-family: 'Jua', sans-serif;
-    font-size: 20px;
-    text-align: center;
-}
-
-
 
 /* WRAPPER */
 .wrap-slider {width:100%;height:586px;margin:0 auto;}
@@ -49,46 +22,3 @@ p{
 
 /* PROGRESS BAR */
 .progress-bar {position:relative;top:-5px;width:800px;height:5px;background:#000;-moz-animation:fullexpand 25s ease-out infinite;-webkit-animation:fullexpand 25s ease-out infinite;}
-
-    ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  background-color: #333;
-  position: -webkit-sticky; /* Safari */
-  
-  top: 0;
-}
-
-li {
-  float: left;
-}
-
-li a {
-  display: block;
-  color: white;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-}
-
-li a:hover {
-  background-color: #111;
-}
-
-.active {
-  background-color: #4CAF50;
-}
-
-.
-
-footer {
-	padding: 10px 0;
-	background-color:#030;
-	color:#fff;
-	text-align:center;
-	clear: both;
-}
-
-   
