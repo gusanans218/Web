@@ -69,65 +69,33 @@ li a:hover {
 
 
 
+.footer {
+	padding: 10px 0;
+	background-color:#030;
+	color:#fff;
+	text-align:center;
+    clear: both;
+}
+
+body {margin:25px;}
+
+div.polaroid {
+  width: 80%;
+  background-color: white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin-bottom: 25px;
+}
+
+div.container {
+  text-align: center;
+  padding: 10px 20px;
+}
+
+
 footer {
 	padding: 10px 0;
 	background-color:#030;
 	color:#fff;
 	text-align:center;
-	clear: both;
-}
-div{
-  
-  padding-bottom: 15px;
-}
-
-   
-div.gallery {
-  border: 1px solid #000000;
-  padding: auto;
-}
-
-div.gallery:hover {
-  border: 1px solid #777;
-}
-
-div.gallery img {
-  width: 150px;
-  height: 150px;
-  
-}
-
-div.desc {
-  padding: 15px;
-  text-align: center;
-}
-
-* {
-  box-sizing: border-box;
-}
-
-.responsive {
-  padding: 10px;
-  padding-bottom: 25px;
-  float: left;
-  width: 24.99999%;
-}
-
-@media only screen and (max-width: 700px) {
-  .responsive {
-    width: 49.99999%;
-    margin: 10px 0;
-  }
-}
-
-@media only screen and (max-width: 100px) {
-  .responsive {
-    width: 100%;
-  }
-}
-
-.clearfix:after {
-  content: "";
-  display: table;
-  clear: both;
+    clear: both;
 }
