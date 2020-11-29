@@ -1,31 +1,32 @@
-<!doctype html>
-<meta charset="utf-8">
-<link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+<!DOCTYPE html>
+<html lang="ko">
+
 <head>
-    <style>
-        h1{
-           border-bottom:5px solid red;
-           text-align:center;
-           font-family: 'Anton', sans-serif;
-        }
-        ol{
-            border-right:5px solid blue;
-        }
-        #contain{
-            display:grid;
-           grid-template-columns:200px 1fr;
-           background-color:pink;
-        }
-    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WEB CAFE</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
 </head>
+
 <body>
-    <h1><a href="index.html">WEB!</a></h1>
-    <div id="contain">
-        <ol>
-            <li><a href="html">html</a></li>
-            <li><a href="css">css</a></li>
-            <li><a href="javasript">javasript</a></li><br>
-        </ol>
-        <div>WEB is world wide web.</div>
+    <div id="home" class="back">
+        <header class="page-header">
+            <h1><a href="index.html"><img class="logo" src="logo.svg" alt=""></a></h1>
+            <nav>
+                <ul class="main-nav">
+                    <li><a href="news.html">NEWS</a></li>
+                    <li><a href="menu.html">MENU</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </nav>
+        </header>
+        <div class="home-content">
+            <h2 class="page-title">We'll Make Your Day</h2>
+            <p>멋진 카페에서 힐링 시간을 가지세요 첨가물을 넣지 않은 재료로 건강한 음식을 만듭니다.</p>
+            <a class="btn" href="menu.html">메뉴보기</a>
+        </div>
     </div>
 </body>
+
+</html>
